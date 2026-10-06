@@ -1,0 +1,143 @@
+*{
+    box-sizing:border-box
+}
+
+body{
+    font-family:system-ui,sans-serif;
+    background:#111;
+    color:#eee;
+    max-width:480px;
+    margin:auto;
+    padding:16px
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    margin-bottom:16px
+}
+
+nav button{
+    flex:1;
+    padding:12px;
+    border:0;
+    border-radius:8px;
+    background:#222;
+    color:#aaa;
+    font-size:16px
+}
+
+nav button.on{
+    background:#4ade80;
+    color:#000;
+    font-weight:600
+}
+
+h2{
+    font-size:14px;
+    color:#888;
+    font-weight:500;
+    margin:16px 0 8px
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#1c1c1c;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:8px
+}
+
+.item div{
+    flex:1
+}
+
+.item small{
+    color:#888;
+    display:block;
+    margin-top:2px
+}
+
+.item.done span{
+    text-decoration:line-through;
+    color:#666
+}
+
+.item button{
+    background:none;
+    border:0;
+    color:#888;
+    font-size:18px
+}
+
+.item input[type=checkbox]{
+    width:22px;
+    height:22px;
+    margin:0
+}
+
+input[type=text],input[type=time]{
+    width:100%;
+    padding:12px;
+    margin-bottom:8px;
+    border:0;
+    border-radius:8px;
+    background:#222;
+    color:#eee;
+    font-size:16px
+}
+
+.add{
+    width:100%;
+    padding:12px;
+    border:0;
+    border-radius:8px;
+    background:#4ade80;
+    font-size:16px;
+    font-weight:600
+}
+
+h3{
+    font-size:15px;
+    margin:20px 0 6px
+}
+
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:8px;
+    border:0;
+    border-radius:8px;
+    background:#222;
+    color:#eee;
+    font-size:16px
+}
+
+.h{
+    padding:4px 0;
+    font-size:15px
+}
+
+.h.no{
+    color:#888
+}
+
+.h small{
+    color:#888;
+    margin-left:6px
+}
+
+@media print{
+  body{background:#fff;color:#000;max-width:none}
+  nav,select,.add,#u{display:none}
+  h2,.h.no,.h small{color:#444}
+}
+#u{
+    display:block;
+    margin:24px auto 0;
+    background:none;
+    border:0;
+    color:#555;
+    font-size:13px}

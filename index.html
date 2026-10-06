@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <title>HabitTracker</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <nav>
+        <button id="t0" class="on" onclick="go(0)">Today</button>
+        <button id="t1" onclick="go(1)">Tomorrow</button>
+        <button id="t2" onclick="go(2)">History</button>
+    </nav>
+    <main id="app"></main>
+    <button id="u" onclick="update()">Update app</button>
+    <script src="index.js"></script>
+</body>
+</html>
